@@ -194,7 +194,7 @@ class _SleekCircularSliderState extends State<SleekCircularSlider>
   }
 
   void _updateOnChange() {
-    if (widget.onChange != null && !_animationInProgress) {
+    if (widget.onChange != null) {
       final value =
           angleToValue(_currentAngle, widget.min, widget.max, _angleRange);
       widget.onChange(value);
